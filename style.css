@@ -149,6 +149,10 @@ nav {
         gap: 2%;
     }
 
+    .allNavContent h3 {
+        color: #c0c0c0;
+    }
+    
     .header h1 {
         font-size: 8.5vmin;
     }
