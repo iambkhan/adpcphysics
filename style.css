@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #f6f6ee;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #dadcbb;
+}
+
+.bg-img {
+    width: 100vw;
+    height: 100vh;
+    background: url(bg1.jpg);
+    position: fixed;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.5);
+    z-index: 10;
+}
+
+.allNavContent {
+    width: 98%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5%;
+}
+
+.allNavContent img {
+    height: 70%;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.allNavContent h3 {
+    color: #4e4e4e;
+}
+
+.header {
+    gap: 1%;
+    width: 100%;
+    height: 100vh;
+    padding-top: 10vh;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: url(phy-bg.png);
+    background-size:cover;
+    font-family: 'Inconsolata', monospace;
+}
+
+.header h1 {
+    font-size: 10vmin;
+}
+.header #adpc {
+    font-size: 5vmin;
+}
+
+.nevigationButtonBox {
+    margin-top: 3%;
+    width: 35%;
+    height: 10%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2%;
+}
+
+.nevigationButtonBox button {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    font-family: 'Inconsolata', monospace;
+    background: #ffc214;
+    border: none;
+    border-radius: 10px;
+    color: rgb(216, 216, 216);
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bgImageUseBox {
+    margin-top: 1%;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bgImageUseBox1 {
+    width: 80%;
+    height: 100%;
+    box-shadow: 0 0 50px 10px black;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.paraAbtClg {
+    margin: auto;
+    margin-top: 2%;
+    width: 80%;
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 2%;
+    text-align: justify;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        width: 100%;
+        height: 100%;
+        background-color:#f9fbe4;
+    }    
+
+    .allNavContent {
+        gap: 2%;
+    }
+
+    .header h1 {
+        font-size: 8.5vmin;
+    }
+    .header #adpc {
+        font-size: 4.5vmin;
+    }
+
+    .header h2 {
+        font-size: 4vmin;
+    }
+
+    .header {
+        gap: 1%;
+        width: 100%;
+        height: 60vh;
+    }
+
+    .nevigationButtonBox {
+        width: 40%;
+        height: 15vh;
+        grid-template-columns: none;
+        grid-template-rows: repeat(2,1fr);
+        gap: 3%;
+    }
+
+    .bgImageUseBox {
+        margin-top: 4%;
+        height: 60vh;
+    }
+    
+    .bgImageUseBox1 {
+        width: 92%;
+    }
+    
+    .blurBox1 {
+        width: 4%;
+    }
+    
+    .paraAbtClg {
+        margin-top: 5%;
+        width: 92%;
+        border-radius: 1px;
+        padding: 5%;
+    }
+}
